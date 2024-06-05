@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin:10px;
+        }
+        .container1{
+            border:solid rgb(150, 29, 29) 3px;
+            background: #d16826;
+            height:1200px;
+        }
+       .container2{
+            border:solid rgb(29, 41, 150) 3px;
+            background: #44b816;
+            height:1200px;
+
+       }
+        .img2{
+             /*change the position with respect to its static (or normal position ) of an element and leave gap*/
+            /* position: relative;
+            top:30px;
+            left:10px;  */
+            
+            /* Change the position with respect to its parent and does not leave gap(last element overlap its position) */
+            /* position:absolute;
+            top:30px;
+            left:100px; */
+
+
+            position:sticky;
+            top:200px;
+
+        }
+        .img3{
+            /*makes its position fixed to the window(it is relavtive to window) */
+            position:fixed;
+            bottom:0;
+            right:0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container1">
+        <img src="0_1.webp" alt="poster1" height="300px" width="300px" class="img1">
+  
+
+  
+        <img src="0_1.webp" alt="poster2" height="300px" width="300px" class="img2">
+
+
+   
+        <img src="0_1.webp" alt="poster3" height="300px" width="300px"  class="img3">
+ 
+
+    
+        <img src="0_1.webp" alt="poster4" height="300px" width="300px"  class="img4">
+    </div>
+
+    <div class="container2">    </div>
+
+
+</body>
+</html>
