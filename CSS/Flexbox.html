@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: #0bc398;
+            border: 3px solid red;
+            height:1200px;
+           
+
+            /* form a flex */
+            display:flex;
+
+        /* give the direction to the flex item in the flex conatiner ,, by default is row  
+        row reverse and coumn reverse for reversing flex item in opposite direction*/
+
+           flex-direction:row;  
+        
+        /* by default no wrap, wrap does not allow to sequeeze size of the flex item until the space is provided */
+           /* flex-wrap: wrap; */
+
+        
+        /* Align all flex item along the main axis */
+        justify-content:center ;
+
+        /* Align all flex item along the cross axis */
+        /* align-items: start;
+
+        align-content: start; */
+
+        }
+        .box{
+            width:200px;
+            height:200px;
+            margin:15px;
+            padding:10px;
+        }
+        #box1{
+          background: #4f4da6;
+
+        /* property to maintain sequence of flex item */
+          /* order:500; */
+
+        /*  property tells how fastly you flex item shrink as comapre to other item, here :box1 shrink 4times fastly than others */
+          /* flex-shrink: 4; */
+           
+        /* property tells how fastly you flext item grow and covers the space as compare to other item */
+          /* flex-grow: 5; */
+          
+        /* propery used to set intial dimension of flex item */
+          /* flex-basis:300px; */
+
+        /* align flex item along the cross axis  */
+          /* align-self:flex-end; */
+        }
+        #box2{
+          background: #ca7777;
+        
+        }
+        #box3{
+          background: #c23eb7;
+        }
+        #box4{
+           background: #e39732;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><h1>BOX1</h1></div>
+        <div class="box"id="box2"><h1>BOX2</h1></div>
+        <div class="box"id="box3"><h1>BOX3</h1></div>
+        <div class="box"id="box4"><h1>BOX4</h1></div>
+    </div>
+
+    
+</body>
+</html>
