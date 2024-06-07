@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 4px solid violet;
+            background-color: rgb(69, 208, 104);
+            height: 300px;
+            width:600px;
+            padding :10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+
+        }
+        #box-left{
+            background-color: rgb(234, 175, 37);
+            border: 3px solid rgb(232, 41, 155);
+            width:41.66%;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        #box-right{
+            
+            background-color: rgb(241, 100, 227) ;
+            border: 3px solid rgb(77, 4, 48);
+            
+            width: 41.66%;
+        }
+        p{
+            border: 2px solid rgb(54, 69, 185);
+            width:75%;
+            padding:4px;
+            
+        }
+        img{
+            height:100%;
+            width:100%;
+
+        }
+
+        @media screen and (max-width: 640px) {
+            .container{
+                flex-direction:column;
+              
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-left">
+            <p>TEXT 1</p>
+            <p>TEXT 2</p>
+        </div>
+        <div id="box-right">
+            <img src="0_1.webp" alt="LOading" >
+        </div>
+    </div>
+</body>
+</html>
