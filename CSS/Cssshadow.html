@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        /* these are the varaible which can be used anywhere in style */
+        --primary-color:red;
+        --custom-width:300px;
+    }
+    .container{
+        background: #40f3c6;
+        height:600px;
+        border:2px solid rgb(235, 229, 32);
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+    .box{
+        /* There variable only used in the class box only  */
+        /* --primary-color:red;
+        --custom-width:300px; */
+
+        background: #c345ae;
+        width:var(--custom-width);
+        height:300px;
+        border:2px solid rgb(95, 42, 241);
+        padding:10px;
+        margin: 20px;
+
+        /* adding box shadow */
+
+        /* box-shadow: -15px 15px rgb(239, 119, 34); */
+
+        /* box-shadow:10px 15px 10px blueviolet ; */
+
+        /* box-shadow: 10px 15px 5px 5px violet;
+         */
+
+         /* box-shadow: inset 10px 15px brown; */
+
+         box-shadow: 10px 15px  var(--primary-color),20px 20px  green;
+    }
+
+    #head1{
+        /* adding text shadow  */
+        /* text-shadow: 2px 2px 2px white; */
+
+        /* choose by default color, which is black  */
+        /* text-shadow: 12px 12px;
+         */
+
+         text-shadow: 2px 2px 2px rgb(226, 65, 65),2px 2px 2px rgb(145, 234, 22);
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="wc1808421.jpg" alt="" width="150px" height="120px">
+            <h2 id="head1">Welcome to codehlep</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptates! Nobis sed quod animi
+                quis. Nemo sed minima, ut veniam necessitatibus iusto ducimus illo non. Assumenda labore unde veniam
+                eaque?</p>
+        </div>
+    </div>
+</body>
+
+</html>
