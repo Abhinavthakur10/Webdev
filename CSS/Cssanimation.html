@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in Css</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+
+           
+        }
+        .conatiner{
+            width:100vw;
+            height:100vh;
+            background: #a1e059;
+            border:solid 3px rgb(7, 169, 172)
+        }
+        .box{
+            width:350px;
+            height:80px;
+            margin:10px;
+            background: #f44ec2;
+            border: 2px solid rgb(216, 178, 26);
+            border-radius: 25px;
+
+            position: relative;
+
+            /* animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+
+        /* property for the speed curve of the animation */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: cubic-bezier(0, 1.4, 0, 0.27); */
+            
+        /* property tells the direction of animation from source to destination and destination to source , thats why it is alternative */
+            /* animation-direction: alternate;  */
+
+        /* this property tells to specify style for element before the animation and after ending of the animation  */
+        /* animation-fill-mode: backwards;  */
+
+
+        animation: 5s linear 2s 2 alternate backwards running rightmovement; 
+
+        }
+        @keyframes rightmovement {
+            from{
+                top:0;
+                left:0;
+
+            }
+            to{
+                top:0;
+                left:1150px;
+            }
+
+        }
+        .box2{
+            width:350px;
+            height:80px;
+            margin:10px;
+            background: #f44ec2;
+            border: 2px solid rgb(216, 178, 26);
+            border-radius: 25px;
+
+            position: relative;
+
+            animation: 5s linear 0s 1 alternate forwards running leftmovement; 
+
+        }
+        @keyframes leftmovement {
+        from{
+            top:520px;
+            left:1150px;
+
+        }
+        to{
+            top:520px;
+            left:0px;
+
+            }
+        }
+            
+        .circle{
+            /* to make circle */
+            width:100px;
+            height:100px;
+            border-radius: 100px;
+
+            margin:10px;
+            background: #f44ec2;
+            border: 2px solid rgb(216, 178, 26);
+
+            position: relative;
+            top:120px;
+            left:700px;
+            animation: 5s ease-in-out 0s 10 alternate none running circlemovement; 
+
+            
+        }
+        
+    @keyframes circlemovement
+     {
+        0%{
+            top:1%;
+            left:5%;
+        }
+        25%{
+            top:1%;
+            left:90%;
+
+        }
+        50%{
+            top:50%;
+            left:5%;
+
+        }
+        100%{
+            top:50%;
+            left:90%;
+
+        }
+        
+    }
+    </style>
+</head>
+<body >
+    <div class="conatiner">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="circle">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
