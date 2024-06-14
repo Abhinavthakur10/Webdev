@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid example_2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing:  border-box;
+        }
+        .body{
+            width:100vw;
+            height:100vh;
+        }
+        .container{
+            height:100%;
+            width:100%;
+            border:3px solid rgb(100, 18, 253);
+            background: #da6060;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            /* gap:1rem; */
+
+       /* align all item horizontally in cell */
+            /* justify-items: start; */
+
+         /* align all itme vertically in cell */
+            /* align-items: center; */
+
+        /* done both justify and align items in cell */
+
+            place-items: center;
+
+        }
+        .item{
+            height: 100px;
+            width:100px;
+            margin:2em;
+            padding:2em;
+            gap:1rem;
+
+            background: #c8e437;
+            border: rgb(47, 157, 230) solid 2px;
+        
+        /* Alighn along the horizontal axis     */
+            /* justify-self: end; */
+
+        /* Align Along the vertical axis */
+            /* align-self: stretch; */
+
+
+        /* done left and right alignment across both vertical and horizontal axis */
+            /* place-self: center; */
+
+
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+
+    </div>
+    
+</body>
+</html>
