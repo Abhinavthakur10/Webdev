@@ -96,17 +96,130 @@ body{
         border:none;
     }
 }
-
-
-.main-section{
+.content{
     max-width:1580px;
-    display:flex;
-    flex-direction: row;
-    padding:1rem;
-    align-items: center;
+    max-height:600px;
+  
+    margin:0 auto;
+
 }
 
 
 
 
+.main-section{
+    
+    display:flex;
+    flex-direction: column;
+    /* padding:1rem; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap:3rem;
+}
 
+.left-content{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap:1rem;
+    animation: slidefromleft 1s ease forwards;
+    opacity:0;
+
+}
+@keyframes slidefromleft {
+    0%{
+        opacity: 0;
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.section-label{
+    color:rgb(141, 63, 224);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.section-title{
+    font-size:3rem;
+    padding:1rem;
+    font-weight:bold;
+
+}
+.section-description{
+    font-size:1.4rem;
+    color:rgb(90, 90, 90);
+    text-align: center;
+}
+.button-group{
+    margin:3rem;
+    display:flex;
+    
+}
+.buy-button, .check-button{
+    border: none;
+    font-weight:800;
+    font-size:1.6rem;
+    color:white;
+    background-color:rgb(141, 63, 224);
+    padding:1.5rem  2.5rem;
+    margin:1rem;
+    border-radius: 1rem;
+    
+    
+}
+.check-button{
+    background-color: #4f4e4e;
+}
+
+.buy-button:hover{
+    background-color: rgb(150, 78, 227);
+}
+.check-button:hover{
+    background-color: #616161;
+}
+
+
+.right-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.section-image{
+    border-radius: 2rem;
+}
+
+@media  screen and (min-width:650px) {
+    .main-section{
+        flex-direction: row;
+    }
+    .left-content{
+        text-align: start;
+    }
+    .section-title{
+        padding:0;
+        font-size:4rem ;
+
+    }
+    .section-description{
+        text-align: start;
+        padding:0;
+        font-size: 1.5rem;
+    }
+    .button-group{
+        text-align: start;
+        padding:0;
+        margin-left:0;
+        gap:2rem;
+    }
+    .buy-button,.check-button{
+        margin:0;
+        gap:1rem;
+    }
+   
+}
