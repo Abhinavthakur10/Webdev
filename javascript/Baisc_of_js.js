@@ -1,5 +1,5 @@
-// console.log(1);
-// console.log("Abhinav");
+console.log(1); // console.log() used as print command in js
+console.log("Abhinav");
 
 //                 variable in java script                 //
 //  variable can change  
@@ -18,6 +18,8 @@ let a =10, b=3;
 let d=a**b  // airthmetical operator
 let c=a+b;
 
+
+          // assignment operator
 var l=100;
  l +=10;//a=a+10
 
@@ -37,13 +39,19 @@ var l=100;
  console.log(r==y);
  console.log(r!=y);  //realtional operator
 
- 
+
 //logical operator((&&-one statment is true)
                 //  (||- one statment is false))
  var q=10,n=20, t=10;
  var k= q==t && q>c;// true or false 
  
  console.log(k);
+
+//  adding two variable or string and creating new string
+ var username="scott", age=20;
+ var message="hey"+username + "your age is"+ age;
+ console.log(message);
+
 
 
 
