@@ -53,7 +53,23 @@ var l=100;
  console.log(message);
 
 
+ // hoisting in js: means local varaiable or glolabal variabl
+ //   always declared at the begning of program and does not give errror
+
+ console.log('statment 1',u);
+ console.log('statment 2');
+ console.log('statment 3');
+var u=1;
+ console.log('statment 4');
+ console.log('statment 5');
 
 
+// Let keyword  and var keyword both can act as global and local variable but in blocks (for and if etc) let act as block variable        //
+// and it does not act as global variable
 
-
+var y=10; //global variable
+let p=20; //global variable
+if(1==1){
+    let z=10;     // block level variable
+}
+console.log(z);    // shows error becasue z is block variable
